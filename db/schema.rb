@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160405203027) do
+ActiveRecord::Schema.define(version: 20160429044057) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -46,28 +46,6 @@ ActiveRecord::Schema.define(version: 20160405203027) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
 
-<<<<<<< HEAD
-  create_table "negociations", force: :cascade do |t|
-    t.string   "name"
-    t.string   "email"
-    t.integer  "DDD"
-    t.integer  "celular"
-    t.string   "subject"
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "status_negociations", force: :cascade do |t|
-    t.string   "status"
-    t.string   "firstNegociator"
-    t.string   "secondNegociator"
-    t.text     "log"
-    t.string   "linkProposta"
-    t.text     "descriptionNegociation"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-=======
   create_table "members", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -90,11 +68,32 @@ ActiveRecord::Schema.define(version: 20160405203027) do
   add_index "members", ["email"], name: "index_members_on_email", unique: true
   add_index "members", ["reset_password_token"], name: "index_members_on_reset_password_token", unique: true
 
+  create_table "negociations", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.integer  "DDD"
+    t.integer  "celular"
+    t.string   "subject"
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "projects", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "name"
->>>>>>> 82ef1cf29ec85ae2239ba64c5294456398cf7cd1
+  end
+
+  create_table "status_negociations", force: :cascade do |t|
+    t.string   "status"
+    t.string   "firstNegociator"
+    t.string   "secondNegociator"
+    t.text     "log"
+    t.string   "linkProposta"
+    t.text     "descriptionNegociation"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
 end
