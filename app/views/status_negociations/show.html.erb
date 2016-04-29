@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @status_negociation.status %>
+</p>
+
+<p>
+  <strong>Firstnegociator:</strong>
+  <%= @status_negociation.firstNegociator %>
+</p>
+
+<p>
+  <strong>Secondnegociator:</strong>
+  <%= @status_negociation.secondNegociator %>
+</p>
+
+<p>
+  <strong>Log:</strong>
+  <%= @status_negociation.log %>
+</p>
+
+<p>
+  <strong>Linkproposta:</strong>
+  <%= @status_negociation.linkProposta %>
+</p>
+
+<p>
+  <strong>Descriptionnegociation:</strong>
+  <%= @status_negociation.descriptionNegociation %>
+</p>
+
+<%= link_to 'Edit', edit_status_negociation_path(@status_negociation) %> |
+<%= link_to 'Back', status_negociations_path %>

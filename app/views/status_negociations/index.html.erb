@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Status Negociations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Firstnegociator</th>
+      <th>Secondnegociator</th>
+      <th>Log</th>
+      <th>Linkproposta</th>
+      <th>Descriptionnegociation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @status_negociations.each do |status_negociation| %>
+      <tr>
+        <td><%= status_negociation.status %></td>
+        <td><%= status_negociation.firstNegociator %></td>
+        <td><%= status_negociation.secondNegociator %></td>
+        <td><%= status_negociation.log %></td>
+        <td><%= status_negociation.linkProposta %></td>
+        <td><%= status_negociation.descriptionNegociation %></td>
+        <td><%= link_to 'Show', status_negociation %></td>
+        <td><%= link_to 'Edit', edit_status_negociation_path(status_negociation) %></td>
+        <td><%= link_to 'Destroy', status_negociation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Status negociation', new_status_negociation_path %>

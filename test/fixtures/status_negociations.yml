@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: MyString
+  firstNegociator: MyString
+  secondNegociator: MyString
+  log: MyText
+  linkProposta: MyString
+  descriptionNegociation: MyText
+
+two:
+  status: MyString
+  firstNegociator: MyString
+  secondNegociator: MyString
+  log: MyText
+  linkProposta: MyString
+  descriptionNegociation: MyText
