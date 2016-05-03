@@ -1,3 +1,3 @@
 class Negociation < ActiveRecord::Base
-#  has_one :account
+  has_one :status_negociation
 end
