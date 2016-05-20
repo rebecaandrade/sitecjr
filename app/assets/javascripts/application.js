@@ -15,3 +15,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+function popUpMembers(id) {
+	window.open('/members/' + id, '_member', 'height=400, width=300, status=no, menubar=no, location=no, toolbar=no'); 
+}
