@@ -1,17 +1,26 @@
-<p id="notice"><%= notice %></p>
+<head>
+	<style>
+    .bg{
+      background-color: #1abc9c; #green
+      color: #ffffff
+    }
+  </style>
+ </head>
+<body class="bg">
+	<div class="container row col-lg-1 col-centered">
+		<!-- fazer a imagem ir 5 pixels para a direita-->
+		<img src="<%= @member.avatar %>" class="img-circle" alt="<%= @member.name %>" width="290" height="290"><br><br><br>
+		<p>
+		  <strong><i>Name:</strong>
+		  <%= @member.name %><br>
+		  <strong><i>Github:</strong>
+		  <br>
+		  <strong><i>Email:</strong>
+		  <%= @member.email %><br>
+		  <strong><i>Description:</strong>
+		  <%= @member.bio %><br>
+		</p>
+	</div>
+</body>
 
-<p>
-  <strong>Name:</strong>
-  <%= @member.name %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @member.email %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @member.bio %>
-</p>
-
+<!-- <p id="notice"><%= notice %></p> -->
