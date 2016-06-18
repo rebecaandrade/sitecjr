@@ -75,41 +75,30 @@
 <!-- MEMBROS  -->
 
   <div class="container" id="membros">
-    <% @members.each do |f| %>
-      <img src="<%= f.avatar %>" onclick="popUpMembers(<%= f.id %>)" class="img-circle" alt="<%= f.name %>" width="100" height="100">
-    <% end %>
-  </div>
-
-
-<!--
-  <div class="container" id="membros">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
-      <ol class="carousel-indicators">
-        <% var = 0 %>
-        <% @members.each do |f| %>
-          <% if var == 0 %>
-            <li data-target="#carousel-example-generic" data-slide-to="<%= var %>" class="active"></li>
-          <% else %>
-            <li data-target="#carousel-example-generic" data-slide-to="<%= var %>"></li>
-          <% end %>
-          <% var += 1 %>
-        <% end %>
-      </ol>
       <div class="carousel-inner">
         <% var = 0 %>
-        <% @members.each do |f| %>
+        <% @members.each_slice(4) do |f, q, r, s| %>
           <% if var == 0 %>
             <div class="item active">
           <% else %>
             <div class="item">
           <% end %>
-              <center>
-                <img onclick="popUpMembers(<%= f.id %>)" src="<%= f.avatar %>" alt="wait..." width="1200" height="350">
-                <div class="carousel-caption">
-                  <h3><%= f.name %></h3>
-                </div>
-              </center>
-            </div>
+             <center>
+             <% if f %>
+                <img src="<%= f.avatar %>" onclick="popUpMembers(<%= f.id %>)" class="img-circle" alt="<%= f.name %>" width="175" height="175">
+              <% end %>
+              <% if q %>
+                <img src="<%= q.avatar %>" onclick="popUpMembers(<%= q.id %>)" class="img-circle" alt="<%= q.name %>" width="175" height="175">
+              <% end %>
+              <% if r %>
+                <img src="<%= r.avatar %>" onclick="popUpMembers(<%= r.id %>)" class="img-circle" alt="<%= r.name %>" width="175" height="175">
+              <% end %>
+              <% if s %>
+                <img src="<%= s.avatar %>" onclick="popUpMembers(<%= s.id %>)" class="img-circle" alt="<%= s.name %>" width="175" height="175">
+              <% end %>
+            </center> 
+          </div>
           <% var += 1 %>
         <% end %>
       </div>
@@ -121,11 +110,10 @@
       </a>
     </div> 
   </div>
--->
 
 <!-- FORM DE CONTATO  -->
 
-  <div class="" id="contato">
+  <div class="container" id="contato">
     <% @negotiation = Negotiation.new %>
 
     <%= form_for(@negotiation) do |f| %>
