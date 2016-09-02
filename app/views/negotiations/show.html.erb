@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @negotiation.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @negotiation.email %>
+</p>
+
+<p>
+  <strong>Celular:</strong>
+  <%= @negotiation.celular %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @negotiation.subject %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @negotiation.description %>
+</p>
+
+<%= link_to 'Edit', edit_negotiation_path(@negotiation) %> |
+<%= link_to 'Back', negotiations_path %>
