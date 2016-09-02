@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   resources :status_negociations
-  resources :negociations
+  resources :negotiations
   resources :projects
   resources :members # added 
   devise_for :admin_users, ActiveAdmin::Devise.config

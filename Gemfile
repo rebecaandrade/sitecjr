@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-# rake 11.1.2
-gem 'rake', '11.1.2'
+# rake 11.2.2
+gem 'rake', '11.2.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'

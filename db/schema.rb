@@ -11,8 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 20160429044057) do
+ActiveRecord::Schema.define(version: 20160510102133) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -69,6 +68,17 @@ ActiveRecord::Schema.define(version: 20160429044057) do
   add_index "members", ["email"], name: "index_members_on_email", unique: true
   add_index "members", ["reset_password_token"], name: "index_members_on_reset_password_token", unique: true
 
+  create_table "negociations", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.integer  "DDD"
+    t.integer  "celular"
+    t.string   "subject"
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "negotiations", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
@@ -85,15 +95,15 @@ ActiveRecord::Schema.define(version: 20160429044057) do
     t.string   "name"
   end
 
-  create_table "status_negotiations", force: :cascade do |t|
+  create_table "status_negociations", force: :cascade do |t|
     t.string   "status"
-    t.string   "firstNegotiator"
-    t.string   "secondNegotiator"
+    t.string   "firstNegociator"
+    t.string   "secondNegociator"
     t.text     "log"
     t.string   "linkProposta"
-    t.text     "description"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.text     "descriptionNegociation"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
 end
