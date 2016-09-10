@@ -2,7 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-p {
+#quem-somos {
+  font-weight: bold;
+  color: #2e4d94;
+}
+
+.custom-text {
   color: #2e4d94;
   font-size: 30px;
+}
+
+.custom-img {
+  width: 30%;
 }
