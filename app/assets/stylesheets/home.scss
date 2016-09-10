@@ -1,0 +1,40 @@
+#home {
+    background: url(cjr-background.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+}
+
+#nav-topo {
+    font-size: 32px;
+}
+
+#nav-topo > ul {
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+#nav-topo > ul > li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#nav-topo > ul > li > a {
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.header-box {
+    margin: 60px 0px 0px 40px;
+    padding: 0px 25px;
+}
+
+#header-texto {
+    font-size: 20px;
+    margin-left: -13px;
+    margin-top: 30px;
+}
+

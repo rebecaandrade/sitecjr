@@ -1,154 +1,138 @@
-<!DOCTYPE html>
-<head>
-  <style>
-    .bg{
-      background-color: #1abc9c; #green
-      color: #ffffff
-    }
-    .bg2{
-      background-color: #474e5d; #darkblue
-      color: #ffffff
-    }
-    .bg3{
-      background-color: #fff; #white
-      color: #555555
-    }
-    .bg4{
-      background-color: #000; #black
-      color: #555555
-    }
-  </style>
-</head>
-
-<body>
-
-<!-- MENU  -->
-
-  <div class="container bg3" id ="home">
-      <ul class="pull-left">
-        <ul class="nav nav-pills">
-          <li role="presentation"><a href="#home"><img src="<%= asset_path( 'cjr.png' ) %>" width="54" height="34"></a></li>
-        </ul>
-      </ul>
-      <ul class= "pull-right">
-        <ul class="nav nav-pills">
-            <li role="presentation" ><a href="#quem_somos">Quem Somos</a></li>
-            <li role="presentation" ><a href="#ferramentas">Ferramentas</a></li>
-            <li role="presentation" ><a href="#portifolio">Portifolio</a></li>
-            <li role="presentation" ><a href="#membros">Membros</a></li>
-            <li role="presentation" ><a href="#contato">Contato</a></li>
-        </ul>
-      </ul>
+<!-- HOME -->
+<header id="home">
+  <nav id="nav-topo">
+    <ul>
+        <li role="presentation"><a href="#quem_somos">Quem Somos</a></li>
+        <li role="presentation"><a href="#membros">Membros</a></li>
+        <li role="presentation"><a href="#portifolio">Portifolio</a></li>
+        <li role="presentation"><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+  
+  <section class="header-box">
+    <div class="col-md-6 col-xs-12">
+      <h1>Empresa Júnior de Computação</h1>
+    
+      <div class="col-md-8">
+        <p id="header-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+      </div>
     </div>
-  <p>Find me in app/views/welcome/index.html.erb</p>
+  
+    <div class="col-md-6 col-xs-12">
+      <a href="#home"><img src="<%= asset_path( 'cjr-logo.svg' ) %>" class="center-block img-responsive" width="200px"></a></li>
+    </div>
+  </section>
+</header>
 
 <!-- TRASPARENT SLIDE  -->
-  
- 
+
+
 <!-- QUEM SOMOS  -->
 
-  <div class="" id="quem_somos">
-    <p>whatever...</p>
+<div class="" id="quem_somos">
+  <p>whatever...</p>
 
-    <p>abismo...abismo</p>
-  </div>
+  <p>abismo...abismo</p>
+</div>
 
 <!-- FERRAMENTAS  -->
-  
-  <div id="ferramentas">
 
-  </div>
+<div id="ferramentas">
+
+</div>
 
 <!-- SLIDE DE PROJETOS  -->
 
-  <div class="" id="portifolio">
-    <ul>
-      <% @projects.each do |p| %>
-        <%= p.name %>
-      <% end %>
-    </ul>
-  </div>
+<div class="" id="portifolio">
+  <ul>
+    <% @projects.each do |p| %>
+      <%= p.name %>
+    <% end %>
+  </ul>
+</div>
 
 <!-- MEMBROS  -->
 
-  <div class="container" id="membros">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
-      <div class="carousel-inner">
-        <% var = 0 %>
-        <% @members.each_slice(4) do |f, q, r, s| %>
-          <% if var == 0 %>
-            <div class="item active">
-          <% else %>
-            <div class="item">
-          <% end %>
-             <center>
-             <% if f %>
-                <img src="<%= f.avatar %>" onclick="popUpMembers(<%= f.id %>)" class="img-circle" alt="<%= f.name %>" width="175" height="175">
-              <% end %>
-              <% if q %>
-                <img src="<%= q.avatar %>" onclick="popUpMembers(<%= q.id %>)" class="img-circle" alt="<%= q.name %>" width="175" height="175">
-              <% end %>
-              <% if r %>
-                <img src="<%= r.avatar %>" onclick="popUpMembers(<%= r.id %>)" class="img-circle" alt="<%= r.name %>" width="175" height="175">
-              <% end %>
-              <% if s %>
-                <img src="<%= s.avatar %>" onclick="popUpMembers(<%= s.id %>)" class="img-circle" alt="<%= s.name %>" width="175" height="175">
-              <% end %>
-            </center> 
-          </div>
-          <% var += 1 %>
+<div class="container" id="membros">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+    <div class="carousel-inner">
+      <% var = 0 %>
+      <% @members.each_slice(4) do |f, q, r, s| %>
+        <% if var == 0 %>
+          <div class="item active">
+        <% else %>
+          <div class="item">
         <% end %>
-      </div>
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>
-    </div> 
-  </div>
+           <center>
+           <% if f %>
+              <img src="<%= f.avatar %>" onclick="popUpMembers(<%= f.id %>)" class="img-circle" alt="<%= f.name %>" width="175" height="175">
+            <% end %>
+            <% if q %>
+              <img src="<%= q.avatar %>" onclick="popUpMembers(<%= q.id %>)" class="img-circle" alt="<%= q.name %>" width="175" height="175">
+            <% end %>
+            <% if r %>
+              <img src="<%= r.avatar %>" onclick="popUpMembers(<%= r.id %>)" class="img-circle" alt="<%= r.name %>" width="175" height="175">
+            <% end %>
+            <% if s %>
+              <img src="<%= s.avatar %>" onclick="popUpMembers(<%= s.id %>)" class="img-circle" alt="<%= s.name %>" width="175" height="175">
+            <% end %>
+          </center> 
+        </div>
+        <% var += 1 %>
+      <% end %>
+    </div>
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div> 
+</div>
 
 <!-- FORM DE CONTATO  -->
 
-  <div class="container" id="contato">
-    <% @negotiation = Negotiation.new %>
+<div class="container" id="contato">
+  <% @negotiation = Negotiation.new %>
 
-    <%= form_for(@negotiation) do |f| %>
-      <% if @negotiation.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(@negotiation.errors.count, "error") %> prohibited this negotiation from being saved:</h2>
+  <%= form_for(@negotiation) do |f| %>
+    <% if @negotiation.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@negotiation.errors.count, "error") %> prohibited this negotiation from being saved:</h2>
 
-          <ul>
-          <% @negotiation.errors.full_messages.each do |message| %>
-            <li><%= message %></li>
-          <% end %>
-          </ul>
-        </div>
-      <% end %>
-
-      <div class="field">
-        <%= f.label :name %><br>
-        <%= f.text_field :name %>
-      </div>
-      <div class="field">
-        <%= f.label :email %><br>
-        <%= f.text_field :email %>
-      </div>
-      <div class="field">
-        <%= f.label :celular %><br>
-        <%= f.text_field :celular %>
-      </div>
-      <div class="field">
-        <%= f.label :subject %><br>
-        <%= f.text_field :subject %>
-      </div>
-      <div class="field">
-        <%= f.label :description %><br>
-        <%= f.text_area :description %>
-      </div>
-      <div class="actions">
-        <%= f.submit %>
+        <ul>
+        <% @negotiation.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
       </div>
     <% end %>
-  </div>  
-</body>
+
+    <div class="field">
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :email %><br>
+      <%= f.text_field :email %>
+    </div>
+    <div class="field">
+      <%= f.label :celular %><br>
+      <%= f.text_field :celular %>
+    </div>
+    <div class="field">
+      <%= f.label :subject %><br>
+      <%= f.text_field :subject %>
+    </div>
+    <div class="field">
+      <%= f.label :description %><br>
+      <%= f.text_area :description %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
+</div>
