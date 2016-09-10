@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   resources :status_negociations
   resources :negotiations
   resources :projects
-  resources :members # added 
+  resources :members # added
+  resources :who_we_are
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   root to: 'welcome#index'
