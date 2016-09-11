@@ -11,12 +11,14 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-sprockets
+//= require home
 //= require_tree .
 
 
 function popUpMembers(id) {
 	window.open('/members/' + id, '_member', 'height=550, width=300, status=no, menubar=no, location=no, resizable=no, toolbar=no background-color=#1abc9c'); 
 }
+
