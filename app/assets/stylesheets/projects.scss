@@ -2,8 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#projetos-text {
+  font-weight: bolder;;
+  font-size: 45px;
+  color: #3aaf50;
+  border-color: #3aaf50;
+  border-bottom-style: solid;
+  border-bottom-width: thick;
+  box-sizing: border-box;
+  width: 69%;
+}
+
 #main-box {
-  height: 100px;
-  width: 100px;
-  background-color: black;
+  margin-top: 50px;
+  width: 100%;
+  border-color: #3aaf50;
+  border-style: solid;
+  border-width: 10px;
 }
