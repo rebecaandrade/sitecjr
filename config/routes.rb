@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :negotiations
   resources :projects
   resources :members # added
-  resources :who_we_are
+  resources :static_site
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   root to: 'welcome#index'
