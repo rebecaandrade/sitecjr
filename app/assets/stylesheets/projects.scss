@@ -2,21 +2,31 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.carousel-indicators li {
+  background-color: #86C863;
+  border-color: #86C863;
+}
+
+.carousel-indicators .active{
+  background-color: #86C863;
+  border-color: #86C863;
+}
+
 #projetos-text {
-  font-weight: bolder;;
+  font-weight: bold;
   font-size: 45px;
-  color: #3aaf50;
-  border-color: #3aaf50;
+  color: #86C863;
+  border-color: #86C863;
   border-bottom-style: solid;
   border-bottom-width: thick;
   box-sizing: border-box;
-  width: 69%;
+  width: 179px;
 }
 
 #main-box {
   margin-top: 50px;
   width: 100%;
-  border-color: #3aaf50;
+  border-color: #86C863;
   border-style: solid;
   border-width: 10px;
 }
