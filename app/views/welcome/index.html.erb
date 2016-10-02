@@ -1,16 +1,13 @@
 <!-- HOME -->
 <header id="home">
-  
+
   <div class="row">
     <div class="col-md-7 conteudo-centralizado">
       <nav id="nav-topo">
         <ul>
             <li role="presentation"><a href="#quem_somos">Quem Somos</a></li>
-            <li class="ponto-pequeno">•</li>
             <li role="presentation"><a href="#membros">Membros</a></li>
-            <li class="ponto-pequeno">•</li>
             <li role="presentation"><a href="#portifolio">Portifólio</a></li>
-            <li class="ponto-pequeno">•</li>
             <li role="presentation"><a href="#contato">Contato</a></li>
         </ul>
       </nav>
@@ -19,15 +16,15 @@
   <section class="header-box">
     <div class="col-md-6 col-xs-12">
       <h1>Empresa Júnior de Computação</h1>
-    
+
       <div class="col-md-9">
-        <p id="header-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        <p id="header-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
       </div>
     </div>
-  
+
     <div class="col-md-6 col-xs-12">
       <a href="#home"><img src="<%= asset_path( 'cjr-logo.svg' ) %>" class="center-block img-responsive logo" width="320px"></a></li>
     </div>
@@ -36,22 +33,7 @@
 
 <!-- QUEM SOMOS  -->
 
-<div class="" id="quem_somos">
-  <p>whatever...</p>
-
-  <p>abismo...abismo</p>
-</div>
-
-
 <!-- SLIDE DE PROJETOS  -->
-
-<div class="" id="portifolio">
-  <ul>
-    <% @projects.each do |p| %>
-      <%= p.name %>
-    <% end %>
-  </ul>
-</div>
 
 <!-- MEMBROS  -->
 
@@ -78,7 +60,7 @@
             <% if s %>
               <img src="<%= s.avatar %>" onclick="popUpMembers(<%= s.id %>)" class="img-circle" alt="<%= s.name %>" width="175" height="175">
             <% end %>
-          </center> 
+          </center>
         </div>
         <% var += 1 %>
       <% end %>
@@ -89,7 +71,7 @@
     <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
-  </div> 
+  </div>
 </div>
 
 <!-- FORM DE CONTATO  -->
