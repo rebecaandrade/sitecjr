@@ -76,9 +76,10 @@
 
 <!-- FORM DE CONTATO  -->
 
-<div class="container" id="contato">
+<section class="container" id="contato">
+  
   <% @negotiation = Negotiation.new %>
-
+  
   <%= form_for(@negotiation) do |f| %>
     <% if @negotiation.errors.any? %>
       <div id="error_explanation">
@@ -97,14 +98,6 @@
       <%= f.text_field :name %>
     </div>
     <div class="field">
-      <%= f.label :email %><br>
-      <%= f.text_field :email %>
-    </div>
-    <div class="field">
-      <%= f.label :celular %><br>
-      <%= f.text_field :celular %>
-    </div>
-    <div class="field">
       <%= f.label :subject %><br>
       <%= f.text_field :subject %>
     </div>
@@ -116,4 +109,5 @@
       <%= f.submit %>
     </div>
   <% end %>
-</div>
+  
+</section>

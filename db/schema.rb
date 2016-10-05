@@ -70,9 +70,6 @@ ActiveRecord::Schema.define(version: 20160510102133) do
 
   create_table "negociations", force: :cascade do |t|
     t.string   "name"
-    t.string   "email"
-    t.integer  "DDD"
-    t.integer  "celular"
     t.string   "subject"
     t.text     "description"
     t.datetime "created_at",  null: false
