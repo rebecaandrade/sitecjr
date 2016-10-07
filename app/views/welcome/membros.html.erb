@@ -1,36 +1,12 @@
-<div class="container" id="membros">
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
-    <div class="carousel-inner">
-      <% var = 0 %>
-      <% @members.each_slice(4) do |f, q, r, s| %>
-        <% if var == 0 %>
-          <div class="item active">
-        <% else %>
-          <div class="item">
-        <% end %>
-           <center>
-           <% if f %>
-              <img src="<%= f.avatar %>" onclick="popUpMembers(<%= f.id %>)" class="img-circle" alt="<%= f.name %>" width="175" height="175">
-            <% end %>
-            <% if q %>
-              <img src="<%= q.avatar %>" onclick="popUpMembers(<%= q.id %>)" class="img-circle" alt="<%= q.name %>" width="175" height="175">
-            <% end %>
-            <% if r %>
-              <img src="<%= r.avatar %>" onclick="popUpMembers(<%= r.id %>)" class="img-circle" alt="<%= r.name %>" width="175" height="175">
-            <% end %>
-            <% if s %>
-              <img src="<%= s.avatar %>" onclick="popUpMembers(<%= s.id %>)" class="img-circle" alt="<%= s.name %>" width="175" height="175">
-            <% end %>
-          </center>
-        </div>
-        <% var += 1 %>
-      <% end %>
-    </div>
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
+<section id="membros" class="container">
+  <h2 class="titulo-section">Membros</h2>
+  <div class="box-texto col-xs-12 col-md-10">
+    <p>Texto de impacto da CJR nos membros </p>
+    <% (1..5).each do |n| %>
+      <p><%= n %></p>
+    <% end %>
   </div>
-</div>
+
+  <!-- Arrumar o carrossel e colocar aqui -->
+
+</section>
