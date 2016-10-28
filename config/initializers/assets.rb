@@ -12,3 +12,4 @@ Rails.application.config.assets.version = '1.0'
 
 Rails.application.config.assets.precompile += %w( who_we_are.css )
 Rails.application.config.assets.precompile += %w( projects.css )
+Rails.application.config.assets.precompile += %w( members_section.css )
