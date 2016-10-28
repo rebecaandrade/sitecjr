@@ -1,6 +1,7 @@
 $(document).ready(function(){
-  $('.your-class').slick({
+  $('.carousel-membros').slick({
       arrows: true,
-      dots: true
+      centerMode: true,
+      slidesToShow: 3
   });
 });
