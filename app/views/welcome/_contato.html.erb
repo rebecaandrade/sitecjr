@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <h2 id="contato-text">Contato</h2>
+  </div>
+</div>
+
+<div id="contato" class="container">
+  <div class="box-form">
+    <% @negotiation = Negotiation.new %>
+
+    <%= form_for(@negotiation) do |f| %>
+      <% if @negotiation.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@negotiation.errors.count, "error") %> prohibited this negotiation from being saved:</h2>
+
+          <ul>
+          <% @negotiation.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="col-xs-12 field">
+        <%= f.text_field :name, :class => 'col-xs-12 cjr-input', placeholder: 'Nome' %>
+      </div>
+      <div class="col-xs-12 field">
+        <%= f.text_field :subject, :class => 'col-xs-12 cjr-input', placeholder: 'Assunto' %>
+      </div>
+      <div class="col-xs-12 field">
+        <%= f.text_area :description, :class => 'col-xs-12 cjr-text-area', placeholder: 'Descrição de interesse...' %>
+      </div>
+      <div class="actions text-center">
+        <%= f.submit "Enviar", :class => 'cjr-botao' %>
+      </div>
+    <% end %>
+  </div>
+</div>

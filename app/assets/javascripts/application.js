@@ -11,10 +11,11 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.slick
+//= require bootstrap-sprockets
+//= require home
 //= require_tree .
 
 function popUpMembers(id) {
