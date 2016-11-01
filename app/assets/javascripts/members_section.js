@@ -2,6 +2,7 @@ $(document).ready(function(){
   $('.carousel-membros').slick({
       arrows: true,
       centerMode: true,
-      slidesToShow: 3
+      slidesToShow: 3,
+      autoplay: true
   });
 });
