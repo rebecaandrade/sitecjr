@@ -1,15 +1,49 @@
-<section>
-  <%= render "welcome/home" %>
-</section>
-<section id="who_we_are">
+<header id="home">
+  <div class="row">
+    <div class="col-md-7 conteudo-centralizado">
+      <nav id="nav-topo">
+        <ul>
+            <li role="presentation"><a id="quem-somos-botao" href="#">Quem Somos</a></li>
+            <li role="presentation"><a id="portifolio-botao" href="#">Portifólio</a></li>
+            <li role="presentation"><a id="membros-botao" href="#">Membros</a></li>
+            <li role="presentation"><a id="contato-botao" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <section class="header-box">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7">
+          <h1 id="header-titulo">Empresa Júnior de Computação</h1>
+        </div>
+      </div>
+      <div id="texto-imagem-row" class="row">
+        <div class="col-md-6 col-xs-12">
+          <p id="header-texto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <a href="#home"><img src="<%= asset_path( 'cjr-logo2.svg' ) %>" class="center-block img-responsive logo" width="800px"></a></li>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</header>
+
+<section id="who-we-are">
   <%= render "static_site/who_we_are" %>
 </section>
-<section>
+<section id="projects">
   <%= render "static_site/projects" %>
 </section>
-<section>
+<section id="members">
   <%= render "static_site/members" %>
 </section>
-<section>
+<section id="contato">
   <%= render "welcome/contato" %>
 </section>
