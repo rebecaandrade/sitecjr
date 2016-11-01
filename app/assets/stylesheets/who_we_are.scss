@@ -1,5 +1,6 @@
 #quem-somos-text {
-  font-weight: bolder;;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bolder;
   font-size: 45px;
   color: #2e4d94;
   border-color: #2e4d94;
@@ -9,8 +10,9 @@
 }
 
 .custom-text {
-  color: #2e4d94;
+  font-family: 'Roboto', sans-serif;
   font-size: 30px;
+  color: #2e4d94;
 }
 
 .custom-img {
