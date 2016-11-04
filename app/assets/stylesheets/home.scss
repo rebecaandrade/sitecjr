@@ -9,25 +9,44 @@
     overflow: hidden;
 }
 
-#nav-topo {
+@media screen and (max-device-width: 500px){
+  #nav-topo {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    ul {
+      padding: 20px 0px 0px 0px;
+      text-align: center;
+      li {
+        display: inline;
+        margin-right: 20px;
+        a {
+          color: white;
+          font-weight: normal;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 500px){
+  #nav-topo {
     font-size: 28px;
     font-family: 'Roboto', sans-serif;
-}
-
-#nav-topo > ul {
-    list-style-type: none;
-    padding-top: 20px;
-}
-
-#nav-topo > ul > li {
-    display: inline;
-    margin-right: 20px;
-}
-
-#nav-topo > ul > li > a {
-    color: white;
-    font-weight: normal;
-    text-decoration: none;
+    ul {
+      list-style-type: none;
+      padding-top: 20px;
+      li {
+        display: inline;
+        margin-right: 20px;
+        a {
+          color: white;
+          font-weight: normal;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
 
 #nav-topo > ul > li > a:hover {
@@ -36,19 +55,17 @@
 
 #header-texto {
   font-family: 'Roboto', sans-serif;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
 }
 
 #header-titulo {
   font-family: 'Roboto Slab', serif;
   font-size: 60px;
-  margin-top: 30px;
-  margin-bottom: 60px;
 }
 
 #texto-imagem-row {
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 .header-box {
