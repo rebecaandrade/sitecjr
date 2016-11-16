@@ -1,16 +1,17 @@
 // Section Home
-#home {
-    background: url(welcome.svg) no-repeat;
+
+.home {
+    background-image: image-url("welcome.svg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     color: white;
+    width: 100vw;
     height: 100vh;
-    overflow: hidden;
 }
 
 @media screen and (max-device-width: 500px){
-  #nav-topo {
+  .nav-top {
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     ul {
@@ -30,7 +31,7 @@
 }
 
 @media screen and (min-device-width: 500px){
-  #nav-topo {
+  .nav-top {
     font-size: 28px;
     font-family: 'Roboto', sans-serif;
     ul {
@@ -49,22 +50,11 @@
   }
 }
 
-#nav-topo > ul > li > a:hover {
+.nav-top a:hover {
     color: #999;
 }
 
-#header-texto {
-  font-family: 'Roboto', sans-serif;
-  font-size: 45px;
-  font-weight: bold;
-}
-
-#header-titulo {
-  font-family: 'Roboto Slab', serif;
-  font-size: 60px;
-}
-
-#texto-imagem-row {
+.texto-img-row {
   padding-top: 40px;
 }
 
@@ -73,16 +63,11 @@
     padding: 0px 25px;
 }
 
-
 .logo {
     margin-top: 40px;
 }
 
-.ponto-pequeno {
-    font-size: 15px;
-}
-
-.conteudo-centralizado {
+.content-center {
     width: 100%;
     margin: 0 auto;
 }

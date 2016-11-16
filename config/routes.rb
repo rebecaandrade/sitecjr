@@ -1,17 +1,21 @@
 Rails.application.routes.draw do
 
-  resources :status_negociations
-  resources :negotiations
-  resources :projects
-  resources :members # added
-  devise_for :admin_users, ActiveAdmin::Devise.config
+  # Rotas feitas para quando for usar o
+  # active admin:
+
+  # resources :status_negociations
+  # resources :projects
+  # resources :members # added
+  # devise_for :admin_users, ActiveAdmin::Devise.config
+  # devise_for :members
+  # get '/contato', to: 'welcome#contato'
+  # get '/membros', to: 'welcome#membros'
+  # get 'welcome/index'
+
   ActiveAdmin.routes(self)
-  root to: 'welcome#index'
-  get 'welcome/index'
-  devise_for :members
+  resources :negotiations
+  root to: 'static_site#index'
   get '/static', to: 'static_site#index'
-  get '/contato', to: 'welcome#contato'
-  get '/membros', to: 'welcome#membros'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

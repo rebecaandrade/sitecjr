@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.carousel-membros').slick({
+  $('.carousel-members').slick({
       arrows: true,
       centerMode: true,
       slidesToShow: 3,
