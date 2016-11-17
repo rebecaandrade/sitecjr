@@ -3,13 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .carousel-indicators li {
-  background-color: #86C863;
-  border-color: #86C863;
+  background-color: $cjrgreen;
+  border-color: $cjrgreen;
 }
 
 .carousel-indicators .active{
-  background-color: #86C863;
-  border-color: #86C863;
+  background-color: $cjrgreen;
+  border-color: $cjrgreen;
 }
 
 .projects-section {
@@ -17,8 +17,8 @@
 }
 
 .projects-text {
-  color: #86C863;
-  border-color: #86C863;
+  color: $cjrgreen;
+  border-color: $cjrgreen;
   border-bottom-style: solid;
   border-bottom-width: thick;
   box-sizing: border-box;
@@ -27,7 +27,7 @@
 .main-box {
   margin-top: 50px;
   width: 100%;
-  border-color: #86C863;
+  border-color: $cjrgreen;
   border-style: solid;
   border-width: 10px;
 }

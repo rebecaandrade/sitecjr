@@ -49,11 +49,15 @@
 }
 
 .nav-top a:hover {
-    color: #999;
+    color: $gray;
 }
 
 .texto-img-row {
   padding-top: 40px;
+}
+
+.header-text {
+  font-size: 2vw;
 }
 
 .header-box {

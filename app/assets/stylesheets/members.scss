@@ -1,18 +1,18 @@
 .members-text {
-  color: #2e4d94;
-  border-color: #2e4d94;
+  color: $cjrblue;
+  border-color: $cjrblue;
   border-bottom-style: solid;
   border-bottom-width: thick;
   box-sizing: border-box;
 }
 
 .slick-prev:before, .slick-next:before {
-    color: #2e4d94;
+    color: $cjrblue;
 }
 
 .carousel-members img {
   margin-left: 80px;
   border-style: solid;
   border-width: thin;
-  border-color: #B3B3B3;
+  border-color: $gray;
 }

@@ -1,13 +1,13 @@
 .contact-text {
-  color: #2e4d94;
-  border-color: #2e4d94;
+  color: $cjrblue;
+  border-color: $cjrblue;
   border-bottom-style: solid;
   border-bottom-width: thick;
   box-sizing: border-box;
 }
 
 .titulo-section {
-  color: #003366;
+  color: $cjrblue;
   font-size: 45px;
   text-decoration: underline;
 }
@@ -20,8 +20,8 @@
 .cjr-text-area,
 .cjr-botao {
   background-color: white;
-  border: 2px solid #2f5982;
-  color: #2f5982;
+  border: 2px solid $cjrblue;
+  color: $cjrblue;
   font-size: 25px;
   font-weight: bold;
   padding: 4px 25px;
