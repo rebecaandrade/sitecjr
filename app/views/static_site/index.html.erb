@@ -3,10 +3,18 @@
     <div class="col-md-7 content-center">
       <nav class="nav-top">
         <ul>
-            <li role="presentation"><a id="quem-somos-botao" href="#">Quem Somos</a></li>
-            <li role="presentation"><a id="portifolio-botao" href="#">Portifólio</a></li>
-            <li role="presentation"><a id="membros-botao" href="#">Membros</a></li>
-            <li role="presentation"><a id="contato-botao" href="#contato">Contato</a></li>
+            <li role="presentation">
+              <a class="quem-somos-botao" href="#">Quem Somos</a>
+            </li>
+            <li role="presentation">
+              <a class="portifolio-botao" href="#">Portifólio</a>
+            </li>
+            <li role="presentation">
+              <a class="membros-botao" href="#">Membros</a>
+            </li>
+            <li role="presentation">
+              <a class="contato-botao" href="#">Contato</a>
+            </li>
         </ul>
       </nav>
     </div>
@@ -33,15 +41,15 @@
   </section>
 </header>
 
-<section id="who-we-are">
+<section role="who-we-are">
   <%= render "static_site/who_we_are" %>
 </section>
-<section id="projects">
+<section role="projects">
   <%= render "static_site/projects" %>
 </section>
-<section id="members">
+<section role="members">
   <%= render "static_site/members" %>
 </section>
-<section id="contato">
-  <%= render "static_site/contato" %>
+<section role="contact">
+  <%= render "static_site/contact" %>
 </section>

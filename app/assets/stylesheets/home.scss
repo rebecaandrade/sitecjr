@@ -10,26 +10,7 @@
     height: 100vh;
 }
 
-@media screen and (max-device-width: 500px){
-  .nav-top {
-    font-size: 2.5em;
-    ul {
-      padding: 20px 0px 0px 0px;
-      text-align: center;
-      li {
-        display: inline;
-        margin-right: 20px;
-        a {
-          color: white;
-          font-weight: normal;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-device-width: 500px){
+@media screen and (min-device-width: 500px){ // para desktop
   .nav-top {
     font-size: 1.8em;
     ul {
@@ -46,6 +27,33 @@
       }
     }
   }
+
+  .header-text {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-device-width: 500px){ // para cel
+  .nav-top {
+    font-size: 2.5em;
+    ul {
+      padding: 20px 0px 0px 0px;
+      text-align: center;
+      li {
+        display: inline;
+        margin-right: 20px;
+        a {
+          color: white;
+          font-weight: normal;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .header-text {
+    font-size: 2.5em;
+  }
 }
 
 .nav-top a:hover {
@@ -54,10 +62,6 @@
 
 .texto-img-row {
   padding-top: 40px;
-}
-
-.header-text {
-  font-size: 2vw;
 }
 
 .header-box {

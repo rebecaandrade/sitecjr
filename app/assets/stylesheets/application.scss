@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "typography";
 @import "colors";
 @import 'slick';
 @import 'slick-theme';
@@ -10,7 +11,6 @@
 @import "members";
 @import 'projects';
 @import 'who_we_are';
-@import "typography";
 
 .espacamento-padrao {
   margin-top: 50px;

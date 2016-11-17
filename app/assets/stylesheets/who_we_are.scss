@@ -1,15 +1,9 @@
+@import "components/image-text-component";
+
 .who-we-are-text {
   color: $cjrblue;
   border-color: $cjrblue;
   border-bottom-style: solid;
   border-bottom-width: thick;
   box-sizing: border-box;
-}
-
-.custom-text {
-  color: $cjrblue;
-}
-
-.custom-img {
-  width: 30%;
 }
