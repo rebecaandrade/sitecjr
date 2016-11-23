@@ -12,7 +12,7 @@ $(document).ready(function(){
             slidesToScroll: 3,
             infinite: true,
             dots: true,
-            autoplay: false
+            autoplay: true
           }
         }
       ]
