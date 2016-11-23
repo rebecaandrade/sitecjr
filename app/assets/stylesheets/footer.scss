@@ -1,0 +1,13 @@
+@import "colors";
+
+.footer {
+  font-size: 2.5em;
+  background-color: $gray;
+
+  a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+  }
+
+}
