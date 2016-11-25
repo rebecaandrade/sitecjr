@@ -2,8 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import "colors";
-
 .carousel-indicators li {
   background-color: $cjrgreen;
   border-color: $cjrgreen;
@@ -18,13 +16,10 @@
   margin-top: 50px;
 }
 
-.projects-text {
-  color: $cjrgreen;
-  border-color: $cjrgreen;
-  border-bottom-style: solid;
-  border-bottom-width: thick;
-  box-sizing: border-box;
-}
+// .heading-text {
+//   color: $cjrgreen;
+//   border-color: $cjrgreen;
+// }
 
 .carousel-box {
   margin-top: 50px;

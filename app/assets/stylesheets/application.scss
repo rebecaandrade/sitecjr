@@ -5,19 +5,14 @@
 @import "bootstrap";
 @import "typography";
 @import "colors";
+@import "components/image-text-component";
+@import "components/heading-text";
 @import 'slick';
 @import 'slick-theme';
 @import "home";
 @import "contact";
 @import "members";
 @import 'projects';
-@import 'who_we_are';
+@import 'who-we-are';
 @import "footer";
 @import "font-awesome";
-
-
-.espacamento-padrao {
-  margin-top: 50px;
-}
-
-// tirar css daqui

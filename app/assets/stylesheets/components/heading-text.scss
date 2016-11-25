@@ -1,9 +1,9 @@
-@import "components/image-text-component";
-
-.who-we-are-text {
+.heading-text {
   color: $cjrblue;
   border-color: $cjrblue;
   border-bottom-style: solid;
   border-bottom-width: thick;
   box-sizing: border-box;
+  margin-top: 35px;
+  margin-bottom: 40px;
 }

@@ -1,8 +1,8 @@
-@import "../colors";
-
 .image-text-box {
   color: $cjrblue;
   img {
     width: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
