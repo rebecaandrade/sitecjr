@@ -130,6 +130,7 @@ GEM
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     orm_adapter (0.5.0)
+    pg (0.19.0)
     polyamorous (1.3.0)
       activerecord (>= 3.0)
     rack (1.6.4)
@@ -221,6 +222,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-slick-rails
+  pg
   rails (= 4.2.4)
   rake (= 11.2.2)
   sass-rails (~> 5.0)
