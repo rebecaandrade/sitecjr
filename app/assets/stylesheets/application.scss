@@ -1,18 +1,18 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "normalize";
+@import "colors";
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "typography";
-@import "colors";
 @import "components/image-text-component";
 @import "components/heading-text";
 @import 'slick';
 @import 'slick-theme';
+@import "projects";
 @import "home";
 @import "contact";
 @import "members";
-@import 'projects';
 @import 'who-we-are';
 @import "footer";
 @import "font-awesome";
