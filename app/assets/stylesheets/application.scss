@@ -1,4 +1,5 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "normalize";
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -13,7 +14,6 @@
 @import 'who_we_are';
 @import "footer";
 @import "font-awesome";
-@import "normalize";
 
 
 .espacamento-padrao {
