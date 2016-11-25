@@ -49,6 +49,9 @@ gem 'carrierwave'
 # icons
 gem "font-awesome-rails"
 
+group :production do
+  gem 'pg'
+end
 
 
 group :development, :test do
