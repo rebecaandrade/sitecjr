@@ -4,6 +4,21 @@
 
 @import "colors";
 
+@media screen and (min-device-width: 500px){
+  .carousel-inner img {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-device-width: 500px){
+
+  .carousel-inner img {
+    width: 100%;
+  }
+
+}
+
 .carousel-indicators li {
   background-color: $cjrgreen;
   border-color: $cjrgreen;
@@ -20,7 +35,6 @@
 
 .carousel-box {
   margin-top: 50px;
-  width: 100%;
   border-color: $cjrgreen;
   border-style: solid;
   border-width: 10px;
