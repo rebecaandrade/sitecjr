@@ -5,12 +5,21 @@
     ul {
       list-style-type: none;
       padding-top: 20px;
+      margin-bottom: 0px;
       li {
         display: inline;
         margin-right: 20px;
         a {
           color: white;
           font-weight: normal;
+          text-decoration: none;
+        }
+      }
+      .pull-right{
+        margin-right: 20px;
+        a {
+          font-size: 1.4em;
+          padding: 5px;
           text-decoration: none;
         }
       }
